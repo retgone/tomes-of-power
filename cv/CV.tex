@@ -8,6 +8,8 @@
 \newboolean{foreign}
 \setboolean{foreign}{false}
 
+\def\superofficial{}
+
 \begin{document}
 \name{\Large Alexander Fokin}
 \begin{resume}
@@ -29,8 +31,9 @@
     \textsl{C++ Expert} \hfill \textbf{May 2016 - present}\\\vspace{1mm}%
     Currently serving as a chairman of the C++ standards working group of the Russian National Body.
 
-    %{\footnotesize\textit{ISO C++ Standards Committee is called WG21, officially ISO/IEC JTC1 (Joint Technical Committee 1) / SC22 (Subcommittee 22) / WG21 (Working Group 21). More info is available at \url{http://isocpp.org} and \url{http://stdcpp.ru}.}}
-    
+\ifdefined\superofficial
+    {\footnotesize\textit{ISO C++ Standards Committee is called WG21, officially ISO/IEC JTC1 (Joint Technical Committee 1) / SC22 (Subcommittee 22) / WG21 (Working Group 21). More info is available at \url{http://isocpp.org} and \url{http://stdcpp.ru}.}}
+\fi
     
     \textbf{Yandex}, Moscow, Russian Federation \vspace{2mm}\\\vspace{1mm}%
     \textsl{Head of Search Components} \hfill \textbf{October 2015 - present}\\\vspace{1mm}%
@@ -42,15 +45,22 @@
     As a side project have started an effort to revitalize our code base, replacing dated code and generally bringing order to where chaos has previously reigned. Ported clang's libcxx to MSVC as part of this effort, thus being instrumental in our switch to C++11 STL.
 
     Also currently leading a project to improve the way programming interviews are performed at Yandex. Started with a number of presentations on best interviewing practices for different branches of the company, then worked on developing new rules for our interviewing process. Was subsequently charged with implementing these rules on the company scale. Did a lot of research into what constituted a good interview, gathered a team of skilled interviewers, organized interviewing training for employees, and optimized the interviewing process in a manner that was both transparent for all parties involved and was meeting our KPIs.
-
-    %{\footnotesize\textit{Yandex is one of the largest internet companies in Europe, operating Russia's most popular search engine. More info is available at \url{https://yandex.com/company/}.}}
     
+    
+\ifdefined\superofficial
+    {\footnotesize\textit{Yandex is one of the largest internet companies in Europe, operating Russia's most popular search engine. More info is available at \url{https://yandex.com/company/}.}}
+\fi 
+
     
     \textbf{Network Optix}, Moscow, Russian Federation, then Los Angeles, USA \vspace{2mm}\\\vspace{1mm}%
     \textsl{Senior Software Engineer} \hfill \textbf{October 2011 - July 2014}\\ 
     Designed and implemented initial version of the HD Witness client application, making sure that its high-level architecture is sound and extensible. As of 2016, five years down the road, most of the foundational code is still unchanged, with a bunch of features added on top.
-    
+
     As the person solely responsible for the client-facing part of the system, I made no compromises when it came to delivering the best experience for our users. After 1.0 release various sources have described HD Witness as the most user-friendly and aesthetically pleasing video management system on the market, which has helped the company to gain a competitive edge.
+
+\ifdefined\superofficial
+    \pagebreak
+\fi
     
     Was subsequently charged with management of the front-end development team. Other responsibilities included design of public APIs and development of generic C++ libraries that were used internally.
     
@@ -58,9 +68,13 @@
     
     %Was subsequently responsible for development of generic C++ libraries that were used internally, including compile-time reflection for C++ types, data serialization and object-relational mapping. Other responsibilities included design of public APIs, management of the front-end development team and ensuring UI and UX consistency of our desktop and mobile clients.
 
-    %{\footnotesize\textit{Network Optix is an enterprise video software development company headquartered in Burbank, CA, focused on building easy-to-use video management technologies. More info is available at \url{http://www.networkoptix.com/}.}}
+\ifdefined\superofficial
+    {\footnotesize\textit{Network Optix is an enterprise video software development company headquartered in Burbank, CA, focused on building easy-to-use video management technologies. More info is available at \url{http://www.networkoptix.com/}.}}
+\fi
     
+\ifdefined\superofficial\else
     \pagebreak    
+\fi
 
     
     %\textbf{Combild}, Moscow, Russian Federation \vspace{2mm}\\\vspace{1mm}%
@@ -82,14 +96,18 @@
 
     Was additionally working on \url{http://mathege.ru}, a national mathematics exam portal. Did both frontend and backend development and have implemented a \LaTeX~to html converter that was used for importing problems into the system.
 
-    %{\footnotesize\textit{Select LTD is a software security consulting company specializing in vulnerability analysis and reverse engineering. Their web presence is limited to \url{http://decompilation.info}, a website describing their decompiler.}}
+\ifdefined\superofficial
+    {\footnotesize\textit{SmartDec is a software security consulting company specializing in vulnerability analysis and reverse engineering. More info is available at \url{http://smartdec.net}.}}
+\fi
     
     
     \textbf{Institute for System Programming of the Russian Academy of Sciences}, Moscow, Russian Federation \vspace{2mm}\\\vspace{1mm}%
     \textsl{Software Engineer} \hfill \textbf{September 2007 - September 2008}\\
     Was working in a team developing a framework for dynamic analysis of binary code. Using C++ metaprogramming techniques implemented a disassembler for MIPS64 architecture that significantly outperformed all other disassemblers for this architecture.
 
-    %{\footnotesize\textit{ISPRAS is an R\&D organization in the field of system programming and software engineering. Among its clients are leading IT companies such as HP, IBM, Intel and others. More info is available at \url{http://www.ispras.ru/en/}.}}
+\ifdefined\superofficial
+    {\footnotesize\textit{ISPRAS is an R\&D organization in the field of system programming and software engineering. Among its clients are leading IT companies such as HP, IBM, Intel and others. More info is available at \url{http://www.ispras.ru/en/}.}}
+\fi
     
    
     \textbf{Intel}, Moscow, Russian Federation \vspace{2mm}\\\vspace{1mm}%
@@ -98,12 +116,17 @@
 
     Was also charged with the development of Ruby bindings for Intel's Integrated Performance Primitives library. Description is available at \url{https://github.com/retgone/ipp4r}.
     
-    %{\footnotesize\textit{Intel is an American multinational corporation and technology company. More info is available at \url{http://www.intel.com}.}}
+\ifdefined\superofficial
+    {\footnotesize\textit{Intel is an American multinational corporation and technology company. More info is available at \url{http://www.intel.com}.}}
+\fi
     
     
     %\textbf{Personal Projects} \vspace{2mm}\\\vspace{1mm}%
     %I am an avid programmer and I enjoy writing code in my free time. Throughout the years I have done a lot freelance work and have finished several personal projects, including a real-time ray-tracing engine, a virtual mouse driver for Windows XP, a tool for automatic reconstruction of 3d solids from engineering drawings and a lot of OpenGL demos. For more information check out my github page (\url{https://github.com/retgone}).
    
+   
+    \pagebreak    
+
    
     \section{\mysidestyle Education}
     \textbf{Department of Computational Mathematics and Cybernetics, Moscow State University}, Moscow, Russian Federation \vspace{2mm}\\\vspace{1mm}%
@@ -124,9 +147,9 @@
 %    Software reverse engineering, binary translation, decompilation.
 
 %    \section{\mysidestyle Research\\Experience}
-%    \textbf{Select LTD} \vspace{2mm}\\\vspace{1mm}%
+%    \textbf{SmartDec} \vspace{2mm}\\\vspace{1mm}%
 %    \hfill \textbf{October 2010 - September 2011}\\
-%    I continued my work on C++ decompilation at Select LTD. 
+%    I continued my work on C++ decompilation at SmartDec. 
 
 %    \textbf{Institute for System Programming of the Russian Academy of Sciences} \vspace{2mm}\\\vspace{1mm}%
 %    \hfill \textbf{July 2008 - September 2010}\\
@@ -144,9 +167,6 @@
     in proceedings of the \textsl{17th International Conference on Program Comprehension}, pp. 263-267, 2009.
 
 
-    \pagebreak    
-
-    
     \section{\mysidestyle Honours, \\Awards and \\Test Scores}
     TOEFL iBT, 111/120, Moscow, 2010.                                                               \vspace{1mm}\\
     M.V. Lomonosov Scholarship for Academic Excellence, Moscow, 2006-2009.                          \vspace{1mm}\\
