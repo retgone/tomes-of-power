@@ -9,6 +9,7 @@
 \setboolean{foreign}{false}
 
 \def\superofficial{}
+\def\consentclause{}
 
 \begin{document}
 \name{\Large Alexander Fokin}
@@ -185,7 +186,13 @@
     Russian: native. \\
     English: fluent. \\
     Japanese: intermediate.
-
+  
+    \ifdefined\consentclause
+    \vspace{5mm}
+    {\footnotesize\textit{I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the Personal Data Protection Act as of 29 August 1997, consolidated text: Journal of Laws 2016, item 922 as amended.}}
+    \fi
+    
+    
 \end{resume}
 \end{document}
 
