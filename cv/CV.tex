@@ -8,7 +8,7 @@
 \newboolean{foreign}
 \setboolean{foreign}{false}
 
-\def\superofficial{}
+%\def\superofficial{}
 \def\consentclause{}
 
 \begin{document}
@@ -41,17 +41,27 @@
     \textsl{Senior Search Engineer} \hfill \textbf{October 2014 - October 2015}\\
     Currently responsible for most of Yandex search runtime, from L7 load balancer all the way down to the services running on top of search database shards, managing a team of some 80 engineers.
     
-    Was hired as an engineer to work on the next generation index that would speed up the search process. The scope of the project was subsequently expanded to what effectively amounted to rewriting most of the search runtime. Wrote most of the index i/o and runtime code, and successfully deployed it in several search verticals, bringing significant performance and quality gains. This subsequently made it possible to considerably increase the number of document in our search database while staying on the same hardware.
+    Here is a list of some of the most important projects that I have worked on:
     
-    As a side project have started an effort to revitalize our code base, replacing dated code and generally bringing order to where chaos has previously reigned. Ported clang's libcxx to MSVC as part of this effort, thus being instrumental in our switch to C++11 STL.
+    \begin{itemize}
+    \item Increasing search performance and number of searchable documents. This is the project that I was hired into as an engineer, and it started as a rewrite of one of the search stages. I wrote most of the foundational code myself, and shipped the first version bringing significant performance gains. Throughout the next several years we continued to ship incremental improvements, considerably increasing the number of document in our search database while simultaneously bringing substantial performance gains.
+    \item Improving technical interviews in the company, making them standardized and consistent. This is a company-wide project that has included everything from researching how it's done in other companies, to doing lectures on best interviewing practices, preparing 100s of interviewers, doing 100s of interviews myself, running a Q\&A channel, creating an online seminar, incrementally improving our rules, and scaling it all up when I was no longer able to do everything by myself. 
+    \item Revitalizing our codebase and creating a system that would motivate developers to pay off technical debt in common code. This is also a company-wide project that started with me porting clang's libcxx to MSVC so that we could switch to C++11 STL, and realizing that this effort could be crowdsourced. This then paved way to some important repository-wide refactorings that could not have been possible otherwise.
+    \item Refactoring our search stack and replacing all the different ways services were communicating with each other with a single unified graph-based approach.
+    \item Switching from an old system with separate admins \& developers into a more efficient one where developers are the ones maintaining their services.
+    \item Improving our infrastructure to make it possible to considerably increase the release frequency of key search components, and provide SLAs for the time it takes for a commit to get into production.
+    \end{itemize}
 
-    Also currently leading a project to improve the way programming interviews are performed at Yandex. Started with a number of presentations on best interviewing practices for different branches of the company, then worked on developing new rules for our interviewing process. Was subsequently charged with implementing these rules on the company scale. Did a lot of research into what constituted a good interview, gathered a team of skilled interviewers, organized interviewing training for employees, and optimized the interviewing process in a manner that was both transparent for all parties involved and was meeting our KPIs.
-    
-    
 \ifdefined\superofficial
     {\footnotesize\textit{Yandex is one of the largest internet companies in Europe, operating Russia's most popular search engine. More info is available at \url{https://yandex.com/company/}.}}
 \fi 
 
+\ifdefined\superofficial
+    \pagebreak
+\fi
+\ifdefined\superofficial\else
+    \pagebreak    
+\fi
     
     \textbf{Network Optix}, Moscow, Russian Federation, then Los Angeles, USA \vspace{2mm}\\\vspace{1mm}%
     \textsl{Senior Software Engineer} \hfill \textbf{October 2011 - July 2014}\\ 
@@ -59,10 +69,6 @@
 
     As the person solely responsible for the client-facing part of the system, I made no compromises when it came to delivering the best experience for our users. After 1.0 release various sources have described HD Witness as the most user-friendly and aesthetically pleasing video management system on the market, which has helped the company to gain a competitive edge.
 
-\ifdefined\superofficial
-    \pagebreak
-\fi
-    
     Was subsequently charged with management of the front-end development team. Other responsibilities included design of public APIs and development of generic C++ libraries that were used internally.
     
     %Streamlined the UI making it highly intuitive and utilized OpenGL to provide a fluid and visually appealing user experience. 
@@ -72,11 +78,6 @@
 \ifdefined\superofficial
     {\footnotesize\textit{Network Optix is an enterprise video software development company headquartered in Burbank, CA, focused on building easy-to-use video management technologies. More info is available at \url{http://www.networkoptix.com/}.}}
 \fi
-    
-\ifdefined\superofficial\else
-    \pagebreak    
-\fi
-
     
     %\textbf{Combild}, Moscow, Russian Federation \vspace{2mm}\\\vspace{1mm}%
     %\textsl{Software Development Lead, Co-founder} \hfill \textbf{June 2010 - October 2011}\\
